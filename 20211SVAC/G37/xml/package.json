@@ -1,0 +1,23 @@
+{
+  "name": "interprete-jison",
+  "version": "1.0.0",
+  "description": "Proyecto 1 compiladores 2",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "gramatica": " cd GRAMATICAS && jison Gramatica1.jison ",
+    "desc": " cd GRAMATICAS && jison gdesc.jison ",
+    "start": "node ./dist/xml/index",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prod": "browserify ./dist/xml/index.js -o bundle.js"
+  },
+  "author": "Carlos Orantes",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jquery": "^3.5.5",
+    "@types/node": "^15.12.0"
+  },
+  "dependencies": {
+    "vis": "^4.21.0-EOL"
+  }
+}
